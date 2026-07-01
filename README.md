@@ -94,8 +94,7 @@ This project is licensed under the MIT License.
 
 Frontend Developer | Aspiring Software Engineer
 
-- GitHub: https://github.com/your-username
-- LinkedIn: https://linkedin.com/in/your-profile
+- LinkedIn: [https://linkedin.com/in/your-profile](https://www.linkedin.com/in/fizabaneen/)
 
 ---
 
