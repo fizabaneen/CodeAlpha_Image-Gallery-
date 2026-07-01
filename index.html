@@ -2,85 +2,307 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Image Gallery</title>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="A premium, modern image gallery showcasing the beauty of Nature, Travel, and Holy Places." />
+    <title>Nature, Travel & Holy Places Gallery</title>
+
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <header class="gallery-header">
-        <h1>Creative Portfolio</h1>
-        <p>A visual journey through moments and imagination</p>
+
+    <!-- ===== HEADER / HERO SECTION ===== -->
+    <header class="hero" id="hero">
+        <div class="hero-bg-shapes">
+            <span class="shape shape-1"></span>
+            <span class="shape shape-2"></span>
+            <span class="shape shape-3"></span>
+        </div>
+        <div class="hero-content">
+            <!-- <span class="hero-badge">✦ Portfolio Gallery</span> -->
+            <h1 class="hero-title">Nature, Travel &amp; Holy Places <span>Gallery</span></h1>
+            <p class="hero-subtitle">Discover breathtaking moments from nature's wonders, thrilling travel destinations,
+                and the world's most sacred holy places.</p>
+        </div>
     </header>
 
-    <main class="gallery-container">
+    <!-- ===== MAIN GALLERY SECTION ===== -->
+    <main class="gallery-section" id="gallery">
+
         <!-- Filter Buttons -->
-        <div class="filter-buttons">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="nature">Nature</button>
-            <button class="filter-btn" data-filter="Holy Places">Holy Places</button>
-            <button class="filter-btn" data-filter="travel">Travel</button>
-            <button class="filter-btn" data-filter="architecture">Architecture</button>
+        <div class="filter-wrapper">
+            <button class="filter-btn active" data-filter="all" id="filter-all">All</button>
+            <button class="filter-btn" data-filter="nature" id="filter-nature">🌿 Nature</button>
+            <button class="filter-btn" data-filter="travel" id="filter-travel">✈️ Travel</button>
+            <button class="filter-btn" data-filter="holy" id="filter-holy">🕌 Holy Places</button>
         </div>
 
         <!-- Gallery Grid -->
-        <div class="gallery-grid">
-            <div class="gallery-item" data-category="nature">
-                <img src="Assets/image 1.jpg" alt="Nature Landscape">
-                <div class="overlay">
-                    <span class="overlay-text">Nature</span>
+        <div class="gallery-grid" id="gallery-grid">
+
+            <!-- ---- NATURE IMAGES ---- -->
+            <article class="gallery-card" data-category="nature" data-title="Misty Forest Path" data-index="0">
+                <div class="card-img-wrapper">
+                    <img src="Assets/image 1.jpg" alt="Misty Forest Path" loading="lazy" />
+                    <div class="card-overlay">
+                        <span class="card-category">🌿 Nature</span>
+                        <h3 class="card-title">Misty Forest Path</h3>
+                        <span class="card-view-icon" aria-label="View Image">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8" />
+                                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                            </svg>
+                        </span>
+                    </div>
                 </div>
-            </div>
-            <div class="gallery-item" data-category="technology">
-                <img src="Assets/image 2.jpg" alt="Technology Device">
-                <div class="overlay">
-                    <span class="overlay-text">Technology</span>
+            </article>
+
+            <article class="gallery-card" data-category="nature" data-title="Autumn Leaves" data-index="1">
+                <div class="card-img-wrapper">
+                    <img src="Assets/image 5.jpg" alt="Autumn Leaves" loading="lazy" />
+                    <div class="card-overlay">
+                        <span class="card-category">🌿 Nature</span>
+                        <h3 class="card-title">Autumn Leaves</h3>
+                        <span class="card-view-icon" aria-label="View Image">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8" />
+                                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                            </svg>
+                        </span>
+                    </div>
                 </div>
-            </div>
-            <div class="gallery-item" data-category="travel">
-                <img src="Assets/image 3.jpg" alt="Travel Destination">
-                <div class="overlay">
-                    <span class="overlay-text">Travel</span>
+            </article>
+
+            <article class="gallery-card" data-category="nature" data-title="Serene Lake" data-index="2">
+                <div class="card-img-wrapper">
+                    <img src="Assets/image 6.jpg" alt="Serene Lake" loading="lazy" />
+                    <div class="card-overlay">
+                        <span class="card-category">🌿 Nature</span>
+                        <h3 class="card-title">Serene Lake</h3>
+                        <span class="card-view-icon" aria-label="View Image">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8" />
+                                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                            </svg>
+                        </span>
+                    </div>
                 </div>
-            </div>
-            <div class="gallery-item" data-category="architecture">
-                <img src="Assets/image 4.jpg" alt="Modern Architecture">
-                <div class="overlay">
-                    <span class="overlay-text">Architecture</span>
+            </article>
+
+            <article class="gallery-card" data-category="nature" data-title="Golden Meadow" data-index="3">
+                <div class="card-img-wrapper">
+                    <img src="Assets/image 2.jpg" alt="Golden Meadow" loading="lazy" />
+                    <div class="card-overlay">
+                        <span class="card-category">🌿 Nature</span>
+                        <h3 class="card-title">Golden Meadow</h3>
+                        <span class="card-view-icon" aria-label="View Image">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8" />
+                                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                            </svg>
+                        </span>
+                    </div>
                 </div>
-            </div>
-            <div class="gallery-item" data-category="nature">
-                <img src="Assets/image 5.jpg" alt="Forest Path">
-                <div class="overlay">
-                    <span class="overlay-text">Nature</span>
+            </article>
+
+            <!-- ---- TRAVEL IMAGES ---- -->
+            <article class="gallery-card" data-category="travel" data-title="Aerial Cityscape" data-index="4">
+                <div class="card-img-wrapper">
+                    <img src="Assets/1222.jpg" alt="Aerial Cityscape" loading="lazy" />
+                    <div class="card-overlay">
+                        <span class="card-category">✈️ Travel</span>
+                        <h3 class="card-title">Aerial Cityscape</h3>
+                        <span class="card-view-icon" aria-label="View Image">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8" />
+                                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                            </svg>
+                        </span>
+                    </div>
                 </div>
-            </div>
-            <div class="gallery-item" data-category="technology">
-                <img src="Assets/image 6.jpg" alt="Abstract Tech">
-                <div class="overlay">
-                    <span class="overlay-text">Technology</span>
+            </article>
+
+            <article class="gallery-card" data-category="travel" data-title="Mountain Sunrise" data-index="5">
+                <div class="card-img-wrapper">
+                    <img src="Assets/travel images.jpg" alt="Mountain Sunrise" loading="lazy" />
+                    <div class="card-overlay">
+                        <span class="card-category">✈️ Travel</span>
+                        <h3 class="card-title">Mountain Sunrise</h3>
+                        <span class="card-view-icon" aria-label="View Image">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8" />
+                                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                            </svg>
+                        </span>
+                    </div>
                 </div>
-            </div>
-            <div class="gallery-item" data-category="travel">
-                <img src="Assets/image 7.jpg" alt="Cityscape">
-                <div class="overlay">
-                    <span class="overlay-text">Travel</span>
+            </article>
+
+            <article class="gallery-card" data-category="travel" data-title="Ocean Horizon" data-index="6">
+                <div class="card-img-wrapper">
+                    <img src="Assets/travel image 2.jpg" alt="Ocean Horizon" loading="lazy" />
+                    <div class="card-overlay">
+                        <span class="card-category">✈️ Travel</span>
+                        <h3 class="card-title">Ocean Horizon</h3>
+                        <span class="card-view-icon" aria-label="View Image">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8" />
+                                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                            </svg>
+                        </span>
+                    </div>
                 </div>
-            </div>
+            </article>
+
+            <article class="gallery-card" data-category="travel" data-title="Desert Dunes" data-index="7">
+                <div class="card-img-wrapper">
+                    <img src="Assets/taravel image 3.jpg" alt="Desert Dunes" loading="lazy" />
+                    <div class="card-overlay">
+                        <span class="card-category">✈️ Travel</span>
+                        <h3 class="card-title">Desert Dunes</h3>
+                        <span class="card-view-icon" aria-label="View Image">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8" />
+                                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- ---- HOLY PLACES IMAGES ---- -->
+            <article class="gallery-card" data-category="holy" data-title="Karbala at Night" data-index="8">
+                <div class="card-img-wrapper">
+                    <img src="Assets/Karbala_City_3.jpg" alt="Karbala at Night" loading="lazy" />
+                    <div class="card-overlay">
+                        <span class="card-category">🕌 Holy Places</span>
+                        <h3 class="card-title">Karbala at Night</h3>
+                        <span class="card-view-icon" aria-label="View Image">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8" />
+                                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="gallery-card" data-category="holy" data-title="Sacred Shrine" data-index="9">
+                <div class="card-img-wrapper">
+                    <img src="Assets/images (1).jpg" alt="Sacred Shrine" loading="lazy" />
+                    <div class="card-overlay">
+                        <span class="card-category">🕌 Holy Places</span>
+                        <h3 class="card-title">Sacred Shrine</h3>
+                        <span class="card-view-icon" aria-label="View Image">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8" />
+                                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="gallery-card" data-category="holy" data-title="Golden Dome" data-index="10">
+                <div class="card-img-wrapper">
+                    <img src="Assets/images (2).jpg" alt="Golden Dome" loading="lazy" />
+                    <div class="card-overlay">
+                        <span class="card-category">🕌 Holy Places</span>
+                        <h3 class="card-title">Golden Dome</h3>
+                        <span class="card-view-icon" aria-label="View Image">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8" />
+                                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="gallery-card" data-category="holy" data-title="Holy Sanctuary" data-index="11">
+                <div class="card-img-wrapper">
+                    <img src="Assets/images (4).jpg" alt="Holy Sanctuary" loading="lazy" />
+                    <div class="card-overlay">
+                        <span class="card-category">🕌 Holy Places</span>
+                        <h3 class="card-title">Holy Sanctuary</h3>
+                        <span class="card-view-icon" aria-label="View Image">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8" />
+                                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+            </article>
+
         </div>
+        <!-- END gallery-grid -->
     </main>
 
-    <!-- Lightbox Modal -->
-    <div id="lightbox" class="lightbox">
-        <span class="close-btn">&times;</span>
-        <button class="nav-btn prev-btn">&#10094;</button>
-        <img class="lightbox-img" id="lightbox-img" src="" alt="Full screen image">
-        <button class="nav-btn next-btn">&#10095;</button>
+    <!-- ===== LIGHTBOX / MODAL ===== -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+        <!-- Close Button -->
+        <button class="lb-close" id="lb-close" aria-label="Close lightbox">&times;</button>
+
+        <!-- Navigation -->
+        <button class="lb-nav lb-prev" id="lb-prev" aria-label="Previous image">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 18 9 12 15 6" />
+            </svg>
+        </button>
+
+        <!-- Image Wrapper -->
+        <div class="lb-img-wrapper">
+            <img src="" alt="" id="lb-img" class="lb-img" />
+            <div class="lb-caption" id="lb-caption">
+                <span class="lb-caption-category" id="lb-caption-cat"></span>
+                <span class="lb-caption-title" id="lb-caption-title"></span>
+            </div>
+        </div>
+
+        <button class="lb-nav lb-next" id="lb-next" aria-label="Next image">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6" />
+            </svg>
+        </button>
+
+        <!-- Counter -->
+        <div class="lb-counter" id="lb-counter"></div>
     </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" id="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <span class="footer-logo">✦</span>
+                <span>Nature, Travel &amp; Holy Places Gallery</span>
+            </div>
+            <p class="footer-tagline">Crafted with passion · Built for CodeAlpha</p>
+            <div class="footer-divider"></div>
+            <p class="footer-copy">© 2025 · Designed &amp; Developed with ❤️ · All Rights Reserved</p>
+        </div>
+    </footer>
 
     <!-- JavaScript -->
     <script src="script.js"></script>
