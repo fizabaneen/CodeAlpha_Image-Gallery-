@@ -1,23 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Gallery</title>
+    <title>Modern Image Gallery</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
-<div class="Image Gallery">
-    <img src="Assets/image 1.jpg" alt="Image 1">
-    <img src="Assets/image 2.jpg" alt="Image 2">
-    <img src="Assets/image 3.jpg" alt="Image 3">
-    <img src="Assets/image 4.jpg" alt="Image 4">
-    <img src="Assets/image 5.jpg" alt="Image 5">
-    <img src="Assets/image 6.jpg" alt="Image 6">
-    <img src="Assets/image 7.jpg" alt="Image 7">
-</div>
+    <header class="gallery-header">
+        <h1>Creative Portfolio</h1>
+        <p>A visual journey through moments and imagination</p>
+    </header>
 
+    <main class="gallery-container">
+        <!-- Filter Buttons -->
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="nature">Nature</button>
+            <button class="filter-btn" data-filter="Holy Places">Holy Places</button>
+            <button class="filter-btn" data-filter="travel">Travel</button>
+            <button class="filter-btn" data-filter="architecture">Architecture</button>
+        </div>
 
+        <!-- Gallery Grid -->
+        <div class="gallery-grid">
+            <div class="gallery-item" data-category="nature">
+                <img src="Assets/image 1.jpg" alt="Nature Landscape">
+                <div class="overlay">
+                    <span class="overlay-text">Nature</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="technology">
+                <img src="Assets/image 2.jpg" alt="Technology Device">
+                <div class="overlay">
+                    <span class="overlay-text">Technology</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="travel">
+                <img src="Assets/image 3.jpg" alt="Travel Destination">
+                <div class="overlay">
+                    <span class="overlay-text">Travel</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="architecture">
+                <img src="Assets/image 4.jpg" alt="Modern Architecture">
+                <div class="overlay">
+                    <span class="overlay-text">Architecture</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="Assets/image 5.jpg" alt="Forest Path">
+                <div class="overlay">
+                    <span class="overlay-text">Nature</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="technology">
+                <img src="Assets/image 6.jpg" alt="Abstract Tech">
+                <div class="overlay">
+                    <span class="overlay-text">Technology</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="travel">
+                <img src="Assets/image 7.jpg" alt="Cityscape">
+                <div class="overlay">
+                    <span class="overlay-text">Travel</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <button class="nav-btn prev-btn">&#10094;</button>
+        <img class="lightbox-img" id="lightbox-img" src="" alt="Full screen image">
+        <button class="nav-btn next-btn">&#10095;</button>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
+
 </html>
