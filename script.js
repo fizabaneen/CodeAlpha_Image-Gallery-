@@ -2,7 +2,7 @@
  * ============================================================
  *  NATURE, TRAVEL & HOLY PLACES GALLERY — JAVASCRIPT
  *  Features: Category Filter · Lightbox · Keyboard Navigation
- * ============================================================
+ * ============================================================   
  */
 
 document.addEventListener('DOMContentLoaded', () => {
