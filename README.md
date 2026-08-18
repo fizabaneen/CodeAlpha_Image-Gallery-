@@ -2,7 +2,7 @@
 
 A modern and responsive **Image Gallery** built using **HTML, CSS, and JavaScript**. The gallery showcases beautiful **Nature**, **Travel**, and **Holy Places** images with smooth animations, category filters, and an elegant user interface.
 
-## ✨ Features
+## ✨ Features 
   
 - 🌿 Nature, Travel & Holy Places categories  
 - 🖼️ Responsive CSS Grid Layout  
