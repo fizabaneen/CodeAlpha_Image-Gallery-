@@ -4,7 +4,7 @@ A modern and responsive **Image Gallery** built using **HTML, CSS, and JavaScrip
 
 ## ✨ Features
   
-- 🌿 Nature, Travel & Holy Places categories 
+- 🌿 Nature, Travel & Holy Places categories  
 - 🖼️ Responsive CSS Grid Layout  
 - 🎯 Category Filter Buttons
 - 🔍 Fullscreen Image Lightbox
